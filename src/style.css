@@ -1,0 +1,181 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0; padding: 0;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.vanilla:hover {
+  filter: drop-shadow(0 0 2em #f7df1eaa);
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  outline: none;
+}
+button:hover {
+  border-color: #F55F63;
+}
+button:focus,
+button:focus-visible {
+  outline: 1.4px solid #F55F63;
+}
+
+
+.rec {
+  width: 50%; height: auto; max-height: 60vh; display: flex; flex-direction: column; align-items: center;
+  position: fixed; margin: 0 auto; box-shadow: 1px 1px 10px #1a1a1a; border: 1px solid #292931;
+  padding: 15px 0;  overflow-y: scroll; padding: 20px 0;
+}
+.rec .close-box {display: flex; justify-content: start; width: 90%;}
+.close-box svg {width: 20px;}
+.rec h1 {text-align: center; width: 90%; font-size: 18pt; background-color: #292931; padding: 10px 0}
+.rec .b {
+  width: 90%; display: flex; flex-direction: column; align-items: center;
+}
+.rec .g {
+  width: 70%; display: flex; flex-direction: column; align-items: flex-start;
+  margin-bottom: 10px;
+}
+.rec .g label {font-size: 12pt;}
+.rec .g input, .rec .g textarea  {width: 90%; padding: 15px; border-radius: 10px; background-color: #292931; outline: none; border: 1px solid #292931; margin-bottom: 20px;}
+.rec .g textarea  {padding: 20px 15px; height: 85px; resize: none;}
+
+
+main {
+  width: 100%;
+}
+.preloader {
+  display: flex; align-items: center; justify-content: center;
+  width: 100%; height: 100%;
+}
+.preloader .rot {
+  animation: rotat 1s infinite linear;
+}
+.rot svg {width: 60px; height:auto;}
+.clickable {cursor: pointer;} .white{color: white !important;}
+header {z-index: 10; width: 100%; display: flex; align-items: center; height: 70px; background-color: #1D1E23; position: fixed;}
+header .l {width: 20%; display:flex; align-items: center; justify-content: center;}
+header .l img {width: 40%;height: auto; color: white;}
+header .w {width: 70%; padding: 0 5% 0 2%; display: flex; align-items: center; justify-content: space-between;}
+header .w select {padding: 6px 10px;}
+.main {width: 100%;display: flex; align-items: center; height: 100%;padding-top: 70px; position: fixed;}
+.main .side{  
+  width: 20%; height: 100%; background-color: #22222A;
+}
+.side .b {width: 100%; height: 100%; margin-top: 50px;display: flex; flex-direction: column; align-items: center;}
+.b button {width: 80%; padding: 10px; border-radius: 25px; margin-bottom: 20px;}
+.main .bod {
+  display: flex; flex-direction: column; align-items: center; justify-content: center; width: 80%; height: 100%;
+  background-color: #212026; overflow-y: scroll;
+}
+.main .bod .box {
+  width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center;
+  margin: 40px 0;
+}
+.main .bod .box h3 {font-size: 20pt;}
+.bod .box button {
+  width: 80%; margin-bottom: 10px; border-radius: 25px;
+  color: #F55F63; background-color: #292931;
+}
+.bod .box h5 {
+  width: 100%; font-size: 9pt; text-align: center;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {flex-direction: column; position: relative; padding: 20px 0; justify-content: space-between; height: auto;}
+  header .l img {width: 100%;}
+  header .w {flex-direction: column; justify-content: space-between; margin-top: 20px;}
+  header .w select {margin-top: 20px;}
+  .main {position: relative; margin:0;padding: 0; flex-direction: column;}
+  .main .side { width: 90%;}
+  .main .bod {width: 90%; margin: 0;padding: 0;}
+  .main .bod .box h3 {text-align: center; font-size: 15pt;}
+  .main .bod .box { width: 90%;}
+  .bod .box button { width: 100%;}
+  .bod .box h5 {
+    font-size: 10pt;
+  }
+  .rec {
+    width: 100%; height: 100%; max-height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: start;
+    position: fixed; top: 0;  z-index: 11;margin: 0 auto; box-shadow: 1px 1px 10px #1a1a1a; border: 1px solid #292931;
+    overflow-y: scroll; padding: 15px 0; background-color: #212026;
+  }
+  .rec .close-box {display: flex; justify-content: start; width: 90%;}
+  .close-box svg {width: 20px;}
+  .rec h1 {font-size: 16pt;}
+  .rec .b {
+    width: 90%;
+  }
+  .rec .g {
+    width: 90%;
+  }
+  .rec .g label {font-size: 13pt;}
+  .rec .g input, .rec .g textarea  {width: 90%; padding: 15px; border-radius: 10px; margin-bottom: 20px; font-size: 12pt;}
+  .rec button {margin-bottom: 50px;}
+}
+
+
+@keyframes rotat {0%{rotate: 0deg;} 100%{rotate: 360deg;}}
