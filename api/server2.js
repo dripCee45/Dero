@@ -71,7 +71,8 @@ const F3 = `<div class="rec">
 
       export default async function handler(req, res) {
         // Allow CORS
-        res.setHeader('Access-Control-Allow-Origin', 'https://dero-dapp.vercel.app');
+        // res.setHeader('Access-Control-Allow-Origin', 'https://dero-dapp.vercel.app');
+        res.setHeader('Access-Control-Allow-Origin', '*');
         res.setHeader('Access-Control-Allow-Methods', 'POST, GET, OPTIONS');
         res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
       
