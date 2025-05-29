@@ -102,7 +102,7 @@ main {
 .preloader .rot {
   animation: rotat 1s infinite linear;
 }
-.rot svg {width: 60px; height:auto;}
+.rot svg {width: 100px; height:auto;}
 .clickable {cursor: pointer;} .white{color: white !important;}
 header {z-index: 10; width: 100%; display: flex; align-items: center; height: 70px; background-color: #1D1E23; position: fixed;}
 header .l {width: 20%; display:flex; align-items: center; justify-content: center;}
@@ -178,4 +178,4 @@ header .w select {padding: 6px 10px;}
 }
 
 
-@keyframes rotat {0%{rotate: 0deg;} 100%{rotate: 360deg;}}
+@keyframes rotat {0%{scale: 1;} 50%{scale: 1.07;} 100%{scale: 1;}}
