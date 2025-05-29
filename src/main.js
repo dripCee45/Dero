@@ -156,7 +156,7 @@ function error_bod() {
   bod.innerHTML = error_mod();
 }
 function error_mod() {
-  return = `<div class="box">
+  return `<div class="box">
 
     <h3>Error</h3>
   </div>
