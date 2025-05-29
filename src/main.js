@@ -1,7 +1,6 @@
 import './style.css'
 import { encrypt, decrypt } from './ibeh_encrypt.js';
-import javascriptLogo from './javascript.svg'
-import viteLogo from '/vite.svg'
+import logo from 'src/logo.png'
 
 loadDefault();
 
@@ -37,7 +36,7 @@ function loadDefault() {
   document.querySelector('#app').innerHTML =  `
     <main>
     <header>
-      <div class="l"><img src="src/logo.png" alt="logo" /></div>
+      <div class="l"><img src="${logo}" alt="logo" /></div>
       <div class="w">
         <span>DERO Wallet</span>
         <select class="clickable">
