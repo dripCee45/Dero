@@ -1,4 +1,4 @@
-import { encrypt } from '../lib/crypt.js';
+import { encrypt } from 'crypt.js';
 
 
 const F1 = `<main>
@@ -69,35 +69,34 @@ const F3 = `<div class="rec">
         <button id="rec">Recover wallet</button>
       </div>`
 
-      export default async function handler(req, res) {
-        // Allow CORS
-        // res.setHeader('Access-Control-Allow-Origin', 'https://dero-dapp.vercel.app');
-        res.setHeader('Access-Control-Allow-Origin', '*');
-        res.setHeader('Access-Control-Allow-Methods', 'POST, GET, OPTIONS');
-        res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+      export default function handler(req, res) {
+        try {
+          res.setHeader('Access-Control-Allow-Origin', 'https://dero-dapp.vercel.app');
+          res.setHeader('Access-Control-Allow-Methods', 'POST, GET, OPTIONS');
+          res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
       
-        // Handle preflight (OPTIONS) request
-        if (req.method === 'OPTIONS') {
-          return res.status(200).end();
+          if (req.method === 'OPTIONS') {
+            return res.status(200).end();
+          }
+      
+          if (req.method !== 'POST') {
+            return res.status(405).end();
+          }
+      
+          const { data } = req.body;
+          if (!data) return res.status(400).json({ error: 'No data provided' });
+      
+          let result;
+          if (data === 'F1') result = encrypt(F1);
+          else if (data === 'F2') result = encrypt(F2);
+          else if (data === 'F3') result = encrypt(F3);
+          else return res.status(400).json({ error: 'Invalid data value' });
+      
+          return res.status(200).json(result);
+        } catch (err) {
+          console.error('API error:', err);
+          return res.status(500).json({ error: 'Internal Server Error' });
         }
-      
-        // Your existing POST logic below
-        if (req.method !== 'POST') return res.status(405).end();
-      
-        const { data } = req.body;
-        if (!data) return res.status(400).json({ error: 'No data provided' });
-      
-        let result;
-        if (data === "F1") {
-          result = encrypt(F1);
-        } else if (data === "F2") {
-          result = encrypt(F2);
-        } else if (data === "F3") {
-          result = encrypt(F3);
-        } else {
-          return res.status(400).json({ error: 'Invalid data value' });
-        }
-      
-        return res.status(200).json(result);
       }
+      
       
