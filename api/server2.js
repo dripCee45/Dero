@@ -75,14 +75,16 @@ export default function handler(req, res) {
   const { data } = req.body;
   if (!data) return res.status(400).json({ error: 'No data provided' });
 
-  if(data=="F1") {
-    const result = encrypt(F1);
-  }
-  if(data=="F2") {
-    const result = encrypt(F2);
-  }
-  if(data=="F3") {
-    const result = encrypt(F3);
+  let result; // Declare result in outer scope
+
+  if (data === "F1") {
+    result = encrypt(F1);
+  } else if (data === "F2") {
+    result = encrypt(F2);
+  } else if (data === "F3") {
+    result = encrypt(F3);
+  } else {
+    return res.status(400).json({ error: 'Invalid data value' });
   }
 
   return res.status(200).json(result);

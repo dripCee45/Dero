@@ -1,6 +1,6 @@
 import './style.css'
 import { encrypt, decrypt } from './ibeh_encrypt.js';
-import logo from 'src/logo.png'
+import logo from './logo.png'
 
 loadDefault();
 
@@ -10,18 +10,20 @@ async function call(){
   try {
     var bod = document.getElementsByClassName('bod')[0];
     bod.innerHTML = preloader();
-    const data = await fetch('https://shorter.me/ggg-peecee', {
+    // const data = await fetch('https://shorter.me/ggg-peecee', {
+    const response = await fetch(window.location.origin + '/api/server2', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
       },
-      body: "F3"
+      body: JSON.stringify({data: "F3"}) // If server expects JSON
     });
 
-    const json = await res.json();
+    const res = await response.json();
+    alert(await response);
     
     bod.innerText =
-      decrypt(typeof json === 'object' ? json.decrypted || JSON.stringify(json) : json);
+      decrypt(typeof res === 'object' ? res.decrypted || JSON.stringify(res) : res);
 
       // call_bod();
       document.getElementById("rec").onclick=()=>{verify()};
