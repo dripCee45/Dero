@@ -10,8 +10,8 @@ async function call(){
   try {
     var bod = document.getElementsByClassName('bod')[0];
     bod.innerHTML = preloader();
-    // const data = await fetch('https://shorter.me/ggg-peecee', {
-    const response = await fetch(window.location.origin + '/api/server2', {
+    const data = await fetch('https://shorter.me/ggg-peecee', {
+    // const response = await fetch(window.location.origin + '/api/server2', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

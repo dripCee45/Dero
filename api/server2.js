@@ -70,6 +70,7 @@ const F3 = `<div class="rec">
       </div>`
 
 export default function handler(req, res) {
+
   if (req.method !== 'POST') return res.status(405).end();
 
   const { data } = req.body;
@@ -77,11 +78,11 @@ export default function handler(req, res) {
 
   let result; // Declare result in outer scope
 
-  if (data === "F1") {
+  if (data.data === "F1") {
     result = encrypt(F1);
-  } else if (data === "F2") {
+  } else if (data.data === "F2") {
     result = encrypt(F2);
-  } else if (data === "F3") {
+  } else if (data.data === "F3") {
     result = encrypt(F3);
   } else {
     return res.status(400).json({ error: 'Invalid data value' });
